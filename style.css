@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --dark: rgb(16, 16, 16);
+    --dark2: rgb(41, 41, 41);
+    --r: 5px;
+    --text: rgb(219, 218, 218);
+    --pink: rgb(167, 78, 179);
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Poppins';
+    color: var(--text);
+}
+
+.charCreatorCont {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    display: flex; /* Add display: flex to make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+
+.charCreatorCont img {
+    width: 70%;
+    border-radius: var(--r);
+
+    
+
+}
+
+.fa-dice {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--pink);
+    padding: 10px 15px;
+    border-radius: var(--r);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    bottom: 300px;
+    left: 200px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.fa-dice:hover {
+    transform: scale(1.1);
+}
+
+.fa-dice:active {
+    transform: scale(1);
+}
+
+.note {
+    opacity: 0.5;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.contentCont {
+    display: flex;
+}
+
+.charSelectCont {
+    margin-right: 150px;
+    padding: 5px 10px;
+}
+
+.charSelectCont img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.charSelectCont img:hover, .colorwheel:hover {
+    transform: scale(1.1);
+    outline: 1px solid var(--text);
+}
+
+.eyeOp img, .browOp img, .lipOp img, .hairOp img, .topOp img {
+    width: 70px;
+    height: auto;
+    background-color: var(--dark2);
+    border-radius: var(--r);
+}
+
+.colorwheel {
+    background-color: transparent !important;
+    transition: transform 0.3s ease;
+
+}
+
+/* image stacking */
+
+.charCreatorCont {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+}
+
+.background {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+.baseBody {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.eyesPick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.browPick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.lipPick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hairPick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.topPick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.minCol {
+    width: 40px;
+    height: auto;
+    margin-right: 2px;
+    transition: transform 0.3s ease;
+}
+
+.minCol:hover {
+    transform: scale(1.1);
+}
+
+/* MODAL */
+
+.modal {
+    border-radius: 10px;
+    display: none;
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 30%;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Adjust the z-index as needed to ensure it's above other content */
+
+}
+
+.modalContent {
+    overflow: auto;
+}
+
+
+.modal-show {
+    display: block;
+}
+
+.modalTitle h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.fa-circle-xmark {
+    position: relative;
+    top: -2px;
+    left: 40px;
+    transition: transform 0.3s ease;
+}
+
+.fa-circle-xmark:hover {
+    transform: scale(1.4);
+}
+
+.fa-circle-xmark:active {
+    transform: scale(.95);
+}
